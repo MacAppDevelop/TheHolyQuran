@@ -1,0 +1,886 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0D31D00629DE12CE00997A34 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D38117A29DE0BF300CA58D6 /* Constants.swift */; };
+		0D38112B29DE0A0400CA58D6 /* TheHolyQuranApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D38112A29DE0A0400CA58D6 /* TheHolyQuranApp.swift */; };
+		0D38112F29DE0A0500CA58D6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0D38112E29DE0A0500CA58D6 /* Assets.xcassets */; };
+		0D38113B29DE0A7300CA58D6 /* GRDB in Frameworks */ = {isa = PBXBuildFile; productRef = 0D38113A29DE0A7300CA58D6 /* GRDB */; };
+		0D38114029DE0A8000CA58D6 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D38113C29DE0A8000CA58D6 /* SettingsView.swift */; };
+		0D38114129DE0A8000CA58D6 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D38113D29DE0A8000CA58D6 /* MainView.swift */; };
+		0D38114229DE0A8000CA58D6 /* SurahView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D38113E29DE0A8000CA58D6 /* SurahView.swift */; };
+		0D38114329DE0A8000CA58D6 /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D38113F29DE0A8000CA58D6 /* WelcomeView.swift */; };
+		0D38114B29DE0AA400CA58D6 /* AyaInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D38114629DE0AA400CA58D6 /* AyaInfo.swift */; };
+		0D38114C29DE0AA400CA58D6 /* NavToolbarContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D38114729DE0AA400CA58D6 /* NavToolbarContent.swift */; };
+		0D38114D29DE0AA400CA58D6 /* FontSettingsPopover.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D38114829DE0AA400CA58D6 /* FontSettingsPopover.swift */; };
+		0D38114E29DE0AA400CA58D6 /* GoToPopover.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D38114929DE0AA400CA58D6 /* GoToPopover.swift */; };
+		0D38114F29DE0AA400CA58D6 /* TranslationSettingsPopover.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D38114A29DE0AA400CA58D6 /* TranslationSettingsPopover.swift */; };
+		0D38115429DE0AB700CA58D6 /* ConditionalModifierViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D38115229DE0AB700CA58D6 /* ConditionalModifierViewExtension.swift */; };
+		0D38115A29DE0ADC00CA58D6 /* IncludedTranslation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D38115629DE0ADC00CA58D6 /* IncludedTranslation.swift */; };
+		0D38115B29DE0ADC00CA58D6 /* SurahDBTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D38115729DE0ADC00CA58D6 /* SurahDBTable.swift */; };
+		0D38115C29DE0ADC00CA58D6 /* AyaDBTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D38115829DE0ADC00CA58D6 /* AyaDBTable.swift */; };
+		0D38115D29DE0ADC00CA58D6 /* TranslationDBTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D38115929DE0ADC00CA58D6 /* TranslationDBTable.swift */; };
+		0D38116129DE0AEE00CA58D6 /* ConformArrayToRawRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D38115F29DE0AEE00CA58D6 /* ConformArrayToRawRepresentable.swift */; };
+		0D38116229DE0AEE00CA58D6 /* AppFonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D38116029DE0AEE00CA58D6 /* AppFonts.swift */; };
+		0D38116A29DE0B9F00CA58D6 /* InterfaceLanguages.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D38116729DE0B9F00CA58D6 /* InterfaceLanguages.swift */; };
+		0D38116B29DE0B9F00CA58D6 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D38116829DE0B9F00CA58D6 /* Theme.swift */; };
+		0D38116C29DE0B9F00CA58D6 /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D38116929DE0B9F00CA58D6 /* Fonts.swift */; };
+		0D38116F29DE0BAD00CA58D6 /* TheHolyQuran.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 0D38116E29DE0BAD00CA58D6 /* TheHolyQuran.sqlite */; };
+		0D38117829DE0BC800CA58D6 /* SurahVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D38117629DE0BC800CA58D6 /* SurahVM.swift */; };
+		0D38117929DE0BC800CA58D6 /* DatabaseHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D38117729DE0BC800CA58D6 /* DatabaseHandler.swift */; };
+		0D38117D29DE0CE800CA58D6 /* LimitNumericTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D38117C29DE0CE800CA58D6 /* LimitNumericTextField.swift */; };
+		0D6378DB29DFA93900935577 /* pl_bielawskiego.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 0D63788729DFA93800935577 /* pl_bielawskiego.sqlite */; };
+		0D6378DC29DFA93900935577 /* tr_yazir.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 0D63788829DFA93800935577 /* tr_yazir.sqlite */; };
+		0D6378DD29DFA93900935577 /* ur_ahmedali.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 0D63788929DFA93800935577 /* ur_ahmedali.sqlite */; };
+		0D6378DE29DFA93900935577 /* bn_bengali.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 0D63788A29DFA93800935577 /* bn_bengali.sqlite */; };
+		0D6378DF29DFA93900935577 /* bg_theophanov.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 0D63788B29DFA93800935577 /* bg_theophanov.sqlite */; };
+		0D6378E029DFA93900935577 /* id_indonesian.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 0D63788C29DFA93800935577 /* id_indonesian.sqlite */; };
+		0D6378E129DFA93900935577 /* en_arberry.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 0D63788D29DFA93800935577 /* en_arberry.sqlite */; };
+		0D6378E229DFA93900935577 /* en_hilali.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 0D63788E29DFA93800935577 /* en_hilali.sqlite */; };
+		0D6378E329DFA93900935577 /* bn_hoque.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 0D63788F29DFA93800935577 /* bn_hoque.sqlite */; };
+		0D6378E429DFA93900935577 /* tr_diyanet.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 0D63789029DFA93800935577 /* tr_diyanet.sqlite */; };
+		0D6378E529DFA93900935577 /* ru_krachkovsky.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 0D63789129DFA93800935577 /* ru_krachkovsky.sqlite */; };
+		0D6378E629DFA93900935577 /* it_piccardo.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 0D63789229DFA93800935577 /* it_piccardo.sqlite */; };
+		0D6378E729DFA93900935577 /* nl_leemhuis.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 0D63789329DFA93800935577 /* nl_leemhuis.sqlite */; };
+		0D6378E829DFA93900935577 /* ru_osmanov.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 0D63789429DFA93800935577 /* ru_osmanov.sqlite */; };
+		0D6378E929DFA93900935577 /* ms_basmeih.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 0D63789529DFA93800935577 /* ms_basmeih.sqlite */; };
+		0D6378EA29DFA93900935577 /* es_garcia.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 0D63789629DFA93800935577 /* es_garcia.sqlite */; };
+		0D6378EC29DFA93900935577 /* de_aburida.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 0D63789829DFA93800935577 /* de_aburida.sqlite */; };
+		0D6378ED29DFA93900935577 /* no_berg.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 0D63789929DFA93800935577 /* no_berg.sqlite */; };
+		0D6378EE29DFA93900935577 /* zh_jian.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 0D63789A29DFA93800935577 /* zh_jian.sqlite */; };
+		0D6378EF29DFA93900935577 /* en_ahmedraza.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 0D63789B29DFA93800935577 /* en_ahmedraza.sqlite */; };
+		0D6378F029DFA93900935577 /* uz_sodik.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 0D63789C29DFA93800935577 /* uz_sodik.sqlite */; };
+		0D6378F229DFA93900935577 /* am_sadiq.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 0D63789E29DFA93800935577 /* am_sadiq.sqlite */; };
+		0D6378F329DFA93900935577 /* ml_abdulhameed.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 0D63789F29DFA93800935577 /* ml_abdulhameed.sqlite */; };
+		0D6378F429DFA93900935577 /* en_shakir.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 0D6378A029DFA93800935577 /* en_shakir.sqlite */; };
+		0D6378F529DFA93900935577 /* ku_asan.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 0D6378A129DFA93800935577 /* ku_asan.sqlite */; };
+		0D6378F629DFA93900935577 /* ha_gumi.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 0D6378A229DFA93800935577 /* ha_gumi.sqlite */; };
+		0D6378F729DFA93900935577 /* es_cortes.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 0D6378A329DFA93800935577 /* es_cortes.sqlite */; };
+		0D6378F829DFA93900935577 /* cs_nykl.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 0D6378A429DFA93800935577 /* cs_nykl.sqlite */; };
+		0D6378F929DFA93900935577 /* pt_elhayek.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 0D6378A529DFA93800935577 /* pt_elhayek.sqlite */; };
+		0D6378FA29DFA93900935577 /* ml_karakunnu.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 0D6378A629DFA93800935577 /* ml_karakunnu.sqlite */; };
+		0D6378FB29DFA93900935577 /* ru_sablukov.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 0D6378A729DFA93800935577 /* ru_sablukov.sqlite */; };
+		0D6378FC29DFA93900935577 /* hi_hindi.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 0D6378A829DFA93800935577 /* hi_hindi.sqlite */; };
+		0D6378FD29DFA93900935577 /* bs_mlivo.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 0D6378A929DFA93800935577 /* bs_mlivo.sqlite */; };
+		0D6378FE29DFA93900935577 /* so_abduh.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 0D6378AA29DFA93800935577 /* so_abduh.sqlite */; };
+		0D6378FF29DFA93900935577 /* ta_tamil.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 0D6378AB29DFA93800935577 /* ta_tamil.sqlite */; };
+		0D63790029DFA93900935577 /* ja_japanese.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 0D6378AC29DFA93800935577 /* ja_japanese.sqlite */; };
+		0D63790129DFA93900935577 /* tr_transliteration.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 0D6378AD29DFA93800935577 /* tr_transliteration.sqlite */; };
+		0D63790229DFA93900935577 /* sq_nahi.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 0D6378AE29DFA93800935577 /* sq_nahi.sqlite */; };
+		0D63790329DFA93900935577 /* en_daryabadi.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 0D6378AF29DFA93800935577 /* en_daryabadi.sqlite */; };
+		0D63790429DFA93900935577 /* fa_ghomshei.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 0D6378B029DFA93800935577 /* fa_ghomshei.sqlite */; };
+		0D63790529DFA93900935577 /* tr_ozturk.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 0D6378B129DFA93800935577 /* tr_ozturk.sqlite */; };
+		0D63790629DFA93900935577 /* bs_korkut.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 0D6378B229DFA93800935577 /* bs_korkut.sqlite */; };
+		0D63790729DFA93900935577 /* en_ahmedali.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 0D6378B329DFA93800935577 /* en_ahmedali.sqlite */; };
+		0D63790829DFA93900935577 /* en_maududi.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 0D6378B429DFA93800935577 /* en_maududi.sqlite */; };
+		0D63790929DFA93900935577 /* ps_abdulwali.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 0D6378B529DFA93800935577 /* ps_abdulwali.sqlite */; };
+		0D63790A29DFA93900935577 /* hi_farooq.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 0D6378B629DFA93800935577 /* hi_farooq.sqlite */; };
+		0D63790B29DFA93900935577 /* sw_barwani.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 0D6378B729DFA93800935577 /* sw_barwani.sqlite */; };
+		0D63790C29DFA93900935577 /* fa_fooladvand.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 0D6378B829DFA93800935577 /* fa_fooladvand.sqlite */; };
+		0D63790D29DFA93900935577 /* ru_porokhova.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 0D6378B929DFA93800935577 /* ru_porokhova.sqlite */; };
+		0D63790E29DFA93900935577 /* sd_amroti.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 0D6378BA29DFA93800935577 /* sd_amroti.sqlite */; };
+		0D63790F29DFA93900935577 /* cs_hrbek.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 0D6378BB29DFA93800935577 /* cs_hrbek.sqlite */; };
+		0D63791029DFA93900935577 /* de_khoury.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 0D6378BC29DFA93800935577 /* de_khoury.sqlite */; };
+		0D63791129DFA93900935577 /* ro_grigore.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 0D6378BD29DFA93800935577 /* ro_grigore.sqlite */; };
+		0D63791229DFA93900935577 /* az_mammadaliyev.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 0D6378BE29DFA93800935577 /* az_mammadaliyev.sqlite */; };
+		0D63791429DFA93900935577 /* tr_yildirim.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 0D6378C029DFA93800935577 /* tr_yildirim.sqlite */; };
+		0D63791529DFA93900935577 /* sv_bernstrom.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 0D6378C129DFA93800935577 /* sv_bernstrom.sqlite */; };
+		0D63791629DFA93900935577 /* ur_kanzuliman.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 0D6378C229DFA93800935577 /* ur_kanzuliman.sqlite */; };
+		0D63791729DFA93900935577 /* en_wahiduddin.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 0D6378C329DFA93800935577 /* en_wahiduddin.sqlite */; };
+		0D63791829DFA93900935577 /* tr_ates.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 0D6378C429DFA93800935577 /* tr_ates.sqlite */; };
+		0D63791929DFA93900935577 /* zh_majian.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 0D6378C529DFA93900935577 /* zh_majian.sqlite */; };
+		0D63791A29DFA93900935577 /* en_yusufali.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 0D6378C629DFA93900935577 /* en_yusufali.sqlite */; };
+		0D63791B29DFA93900935577 /* fa_mojtabavi.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 0D6378C729DFA93900935577 /* fa_mojtabavi.sqlite */; };
+		0D63791C29DFA93900935577 /* nl_keyzer.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 0D6378C829DFA93900935577 /* nl_keyzer.sqlite */; };
+		0D63791D29DFA93900935577 /* en_sarwar.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 0D6378C929DFA93900935577 /* en_sarwar.sqlite */; };
+		0D63791E29DFA93900935577 /* az_musayev.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 0D6378CA29DFA93900935577 /* az_musayev.sqlite */; };
+		0D63791F29DFA93900935577 /* sq_mehdiu.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 0D6378CB29DFA93900935577 /* sq_mehdiu.sqlite */; };
+		0D63792029DFA93900935577 /* sq_ahmeti.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 0D6378CC29DFA93900935577 /* sq_ahmeti.sqlite */; };
+		0D63792129DFA93900935577 /* ko_korean.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 0D6378CD29DFA93900935577 /* ko_korean.sqlite */; };
+		0D63792229DFA93900935577 /* fa_khorramshahi.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 0D6378CE29DFA93900935577 /* fa_khorramshahi.sqlite */; };
+		0D63792329DFA93900935577 /* tg_ayati.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 0D6378CF29DFA93900935577 /* tg_ayati.sqlite */; };
+		0D63792429DFA93900935577 /* tr_yuksel.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 0D6378D029DFA93900935577 /* tr_yuksel.sqlite */; };
+		0D63792529DFA93900935577 /* de_bubenheim.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 0D6378D129DFA93900935577 /* de_bubenheim.sqlite */; };
+		0D63792729DFA93900935577 /* ur_maududi.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 0D6378D329DFA93900935577 /* ur_maududi.sqlite */; };
+		0D63792829DFA93900935577 /* ber_mensur.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 0D6378D429DFA93900935577 /* ber_mensur.sqlite */; };
+		0D63792A29DFA93900935577 /* th_thai.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 0D6378D629DFA93900935577 /* th_thai.sqlite */; };
+		0D63792B29DFA93900935577 /* tt_nugman.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 0D6378D729DFA93900935577 /* tt_nugman.sqlite */; };
+		0D63792C29DFA93900935577 /* ug_saleh.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 0D6378D829DFA93900935577 /* ug_saleh.sqlite */; };
+		0D63792D29DFA93900935577 /* dv_divehi.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 0D6378D929DFA93900935577 /* dv_divehi.sqlite */; };
+		0D92064729DE38F6002C3863 /* MaciPadNavBackButtonToolbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D92064629DE38F6002C3863 /* MaciPadNavBackButtonToolbar.swift */; };
+		0D92064929DE3C24002C3863 /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D92064829DE3C24002C3863 /* SearchView.swift */; };
+		0DCF4D4B29DE209B001ECF6B /* iPhoneDismissButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DCF4D4A29DE209B001ECF6B /* iPhoneDismissButton.swift */; };
+		0DCF4D4E29DE2193001ECF6B /* iPhoneText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DCF4D4D29DE2193001ECF6B /* iPhoneText.swift */; };
+		0DEAA48A29E0013D001C0EA6 /* TranslationLanguages.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DEAA48929E0013D001C0EA6 /* TranslationLanguages.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0D38112729DE0A0400CA58D6 /* The Holy Quran.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "The Holy Quran.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0D38112A29DE0A0400CA58D6 /* TheHolyQuranApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TheHolyQuranApp.swift; sourceTree = "<group>"; };
+		0D38112E29DE0A0500CA58D6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0D38113C29DE0A8000CA58D6 /* SettingsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		0D38113D29DE0A8000CA58D6 /* MainView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		0D38113E29DE0A8000CA58D6 /* SurahView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SurahView.swift; sourceTree = "<group>"; };
+		0D38113F29DE0A8000CA58D6 /* WelcomeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
+		0D38114629DE0AA400CA58D6 /* AyaInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AyaInfo.swift; sourceTree = "<group>"; };
+		0D38114729DE0AA400CA58D6 /* NavToolbarContent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavToolbarContent.swift; sourceTree = "<group>"; };
+		0D38114829DE0AA400CA58D6 /* FontSettingsPopover.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FontSettingsPopover.swift; sourceTree = "<group>"; };
+		0D38114929DE0AA400CA58D6 /* GoToPopover.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoToPopover.swift; sourceTree = "<group>"; };
+		0D38114A29DE0AA400CA58D6 /* TranslationSettingsPopover.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TranslationSettingsPopover.swift; sourceTree = "<group>"; };
+		0D38115229DE0AB700CA58D6 /* ConditionalModifierViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConditionalModifierViewExtension.swift; sourceTree = "<group>"; };
+		0D38115629DE0ADC00CA58D6 /* IncludedTranslation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IncludedTranslation.swift; sourceTree = "<group>"; };
+		0D38115729DE0ADC00CA58D6 /* SurahDBTable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SurahDBTable.swift; sourceTree = "<group>"; };
+		0D38115829DE0ADC00CA58D6 /* AyaDBTable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AyaDBTable.swift; sourceTree = "<group>"; };
+		0D38115929DE0ADC00CA58D6 /* TranslationDBTable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TranslationDBTable.swift; sourceTree = "<group>"; };
+		0D38115F29DE0AEE00CA58D6 /* ConformArrayToRawRepresentable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConformArrayToRawRepresentable.swift; sourceTree = "<group>"; };
+		0D38116029DE0AEE00CA58D6 /* AppFonts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppFonts.swift; sourceTree = "<group>"; };
+		0D38116429DE0B3C00CA58D6 /* TheHolyQuran.entitlements */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.entitlements; path = TheHolyQuran.entitlements; sourceTree = "<group>"; };
+		0D38116729DE0B9F00CA58D6 /* InterfaceLanguages.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InterfaceLanguages.swift; sourceTree = "<group>"; };
+		0D38116829DE0B9F00CA58D6 /* Theme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
+		0D38116929DE0B9F00CA58D6 /* Fonts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
+		0D38116E29DE0BAD00CA58D6 /* TheHolyQuran.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = TheHolyQuran.sqlite; sourceTree = "<group>"; };
+		0D38117629DE0BC800CA58D6 /* SurahVM.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SurahVM.swift; sourceTree = "<group>"; };
+		0D38117729DE0BC800CA58D6 /* DatabaseHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DatabaseHandler.swift; sourceTree = "<group>"; };
+		0D38117A29DE0BF300CA58D6 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		0D38117C29DE0CE800CA58D6 /* LimitNumericTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LimitNumericTextField.swift; sourceTree = "<group>"; };
+		0D63788729DFA93800935577 /* pl_bielawskiego.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = pl_bielawskiego.sqlite; sourceTree = "<group>"; };
+		0D63788829DFA93800935577 /* tr_yazir.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = tr_yazir.sqlite; sourceTree = "<group>"; };
+		0D63788929DFA93800935577 /* ur_ahmedali.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = ur_ahmedali.sqlite; sourceTree = "<group>"; };
+		0D63788A29DFA93800935577 /* bn_bengali.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = bn_bengali.sqlite; sourceTree = "<group>"; };
+		0D63788B29DFA93800935577 /* bg_theophanov.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = bg_theophanov.sqlite; sourceTree = "<group>"; };
+		0D63788C29DFA93800935577 /* id_indonesian.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = id_indonesian.sqlite; sourceTree = "<group>"; };
+		0D63788D29DFA93800935577 /* en_arberry.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = en_arberry.sqlite; sourceTree = "<group>"; };
+		0D63788E29DFA93800935577 /* en_hilali.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = en_hilali.sqlite; sourceTree = "<group>"; };
+		0D63788F29DFA93800935577 /* bn_hoque.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = bn_hoque.sqlite; sourceTree = "<group>"; };
+		0D63789029DFA93800935577 /* tr_diyanet.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = tr_diyanet.sqlite; sourceTree = "<group>"; };
+		0D63789129DFA93800935577 /* ru_krachkovsky.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = ru_krachkovsky.sqlite; sourceTree = "<group>"; };
+		0D63789229DFA93800935577 /* it_piccardo.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = it_piccardo.sqlite; sourceTree = "<group>"; };
+		0D63789329DFA93800935577 /* nl_leemhuis.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = nl_leemhuis.sqlite; sourceTree = "<group>"; };
+		0D63789429DFA93800935577 /* ru_osmanov.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = ru_osmanov.sqlite; sourceTree = "<group>"; };
+		0D63789529DFA93800935577 /* ms_basmeih.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = ms_basmeih.sqlite; sourceTree = "<group>"; };
+		0D63789629DFA93800935577 /* es_garcia.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = es_garcia.sqlite; sourceTree = "<group>"; };
+		0D63789829DFA93800935577 /* de_aburida.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = de_aburida.sqlite; sourceTree = "<group>"; };
+		0D63789929DFA93800935577 /* no_berg.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = no_berg.sqlite; sourceTree = "<group>"; };
+		0D63789A29DFA93800935577 /* zh_jian.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = zh_jian.sqlite; sourceTree = "<group>"; };
+		0D63789B29DFA93800935577 /* en_ahmedraza.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = en_ahmedraza.sqlite; sourceTree = "<group>"; };
+		0D63789C29DFA93800935577 /* uz_sodik.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = uz_sodik.sqlite; sourceTree = "<group>"; };
+		0D63789E29DFA93800935577 /* am_sadiq.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = am_sadiq.sqlite; sourceTree = "<group>"; };
+		0D63789F29DFA93800935577 /* ml_abdulhameed.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = ml_abdulhameed.sqlite; sourceTree = "<group>"; };
+		0D6378A029DFA93800935577 /* en_shakir.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = en_shakir.sqlite; sourceTree = "<group>"; };
+		0D6378A129DFA93800935577 /* ku_asan.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = ku_asan.sqlite; sourceTree = "<group>"; };
+		0D6378A229DFA93800935577 /* ha_gumi.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = ha_gumi.sqlite; sourceTree = "<group>"; };
+		0D6378A329DFA93800935577 /* es_cortes.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = es_cortes.sqlite; sourceTree = "<group>"; };
+		0D6378A429DFA93800935577 /* cs_nykl.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = cs_nykl.sqlite; sourceTree = "<group>"; };
+		0D6378A529DFA93800935577 /* pt_elhayek.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = pt_elhayek.sqlite; sourceTree = "<group>"; };
+		0D6378A629DFA93800935577 /* ml_karakunnu.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = ml_karakunnu.sqlite; sourceTree = "<group>"; };
+		0D6378A729DFA93800935577 /* ru_sablukov.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = ru_sablukov.sqlite; sourceTree = "<group>"; };
+		0D6378A829DFA93800935577 /* hi_hindi.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = hi_hindi.sqlite; sourceTree = "<group>"; };
+		0D6378A929DFA93800935577 /* bs_mlivo.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = bs_mlivo.sqlite; sourceTree = "<group>"; };
+		0D6378AA29DFA93800935577 /* so_abduh.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = so_abduh.sqlite; sourceTree = "<group>"; };
+		0D6378AB29DFA93800935577 /* ta_tamil.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = ta_tamil.sqlite; sourceTree = "<group>"; };
+		0D6378AC29DFA93800935577 /* ja_japanese.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = ja_japanese.sqlite; sourceTree = "<group>"; };
+		0D6378AD29DFA93800935577 /* tr_transliteration.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = tr_transliteration.sqlite; sourceTree = "<group>"; };
+		0D6378AE29DFA93800935577 /* sq_nahi.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = sq_nahi.sqlite; sourceTree = "<group>"; };
+		0D6378AF29DFA93800935577 /* en_daryabadi.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = en_daryabadi.sqlite; sourceTree = "<group>"; };
+		0D6378B029DFA93800935577 /* fa_ghomshei.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = fa_ghomshei.sqlite; sourceTree = "<group>"; };
+		0D6378B129DFA93800935577 /* tr_ozturk.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = tr_ozturk.sqlite; sourceTree = "<group>"; };
+		0D6378B229DFA93800935577 /* bs_korkut.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = bs_korkut.sqlite; sourceTree = "<group>"; };
+		0D6378B329DFA93800935577 /* en_ahmedali.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = en_ahmedali.sqlite; sourceTree = "<group>"; };
+		0D6378B429DFA93800935577 /* en_maududi.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = en_maududi.sqlite; sourceTree = "<group>"; };
+		0D6378B529DFA93800935577 /* ps_abdulwali.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = ps_abdulwali.sqlite; sourceTree = "<group>"; };
+		0D6378B629DFA93800935577 /* hi_farooq.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = hi_farooq.sqlite; sourceTree = "<group>"; };
+		0D6378B729DFA93800935577 /* sw_barwani.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = sw_barwani.sqlite; sourceTree = "<group>"; };
+		0D6378B829DFA93800935577 /* fa_fooladvand.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = fa_fooladvand.sqlite; sourceTree = "<group>"; };
+		0D6378B929DFA93800935577 /* ru_porokhova.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = ru_porokhova.sqlite; sourceTree = "<group>"; };
+		0D6378BA29DFA93800935577 /* sd_amroti.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = sd_amroti.sqlite; sourceTree = "<group>"; };
+		0D6378BB29DFA93800935577 /* cs_hrbek.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = cs_hrbek.sqlite; sourceTree = "<group>"; };
+		0D6378BC29DFA93800935577 /* de_khoury.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = de_khoury.sqlite; sourceTree = "<group>"; };
+		0D6378BD29DFA93800935577 /* ro_grigore.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = ro_grigore.sqlite; sourceTree = "<group>"; };
+		0D6378BE29DFA93800935577 /* az_mammadaliyev.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = az_mammadaliyev.sqlite; sourceTree = "<group>"; };
+		0D6378C029DFA93800935577 /* tr_yildirim.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = tr_yildirim.sqlite; sourceTree = "<group>"; };
+		0D6378C129DFA93800935577 /* sv_bernstrom.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = sv_bernstrom.sqlite; sourceTree = "<group>"; };
+		0D6378C229DFA93800935577 /* ur_kanzuliman.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = ur_kanzuliman.sqlite; sourceTree = "<group>"; };
+		0D6378C329DFA93800935577 /* en_wahiduddin.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = en_wahiduddin.sqlite; sourceTree = "<group>"; };
+		0D6378C429DFA93800935577 /* tr_ates.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = tr_ates.sqlite; sourceTree = "<group>"; };
+		0D6378C529DFA93900935577 /* zh_majian.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = zh_majian.sqlite; sourceTree = "<group>"; };
+		0D6378C629DFA93900935577 /* en_yusufali.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = en_yusufali.sqlite; sourceTree = "<group>"; };
+		0D6378C729DFA93900935577 /* fa_mojtabavi.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = fa_mojtabavi.sqlite; sourceTree = "<group>"; };
+		0D6378C829DFA93900935577 /* nl_keyzer.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = nl_keyzer.sqlite; sourceTree = "<group>"; };
+		0D6378C929DFA93900935577 /* en_sarwar.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = en_sarwar.sqlite; sourceTree = "<group>"; };
+		0D6378CA29DFA93900935577 /* az_musayev.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = az_musayev.sqlite; sourceTree = "<group>"; };
+		0D6378CB29DFA93900935577 /* sq_mehdiu.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = sq_mehdiu.sqlite; sourceTree = "<group>"; };
+		0D6378CC29DFA93900935577 /* sq_ahmeti.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = sq_ahmeti.sqlite; sourceTree = "<group>"; };
+		0D6378CD29DFA93900935577 /* ko_korean.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = ko_korean.sqlite; sourceTree = "<group>"; };
+		0D6378CE29DFA93900935577 /* fa_khorramshahi.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = fa_khorramshahi.sqlite; sourceTree = "<group>"; };
+		0D6378CF29DFA93900935577 /* tg_ayati.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = tg_ayati.sqlite; sourceTree = "<group>"; };
+		0D6378D029DFA93900935577 /* tr_yuksel.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = tr_yuksel.sqlite; sourceTree = "<group>"; };
+		0D6378D129DFA93900935577 /* de_bubenheim.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = de_bubenheim.sqlite; sourceTree = "<group>"; };
+		0D6378D329DFA93900935577 /* ur_maududi.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = ur_maududi.sqlite; sourceTree = "<group>"; };
+		0D6378D429DFA93900935577 /* ber_mensur.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = ber_mensur.sqlite; sourceTree = "<group>"; };
+		0D6378D629DFA93900935577 /* th_thai.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = th_thai.sqlite; sourceTree = "<group>"; };
+		0D6378D729DFA93900935577 /* tt_nugman.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = tt_nugman.sqlite; sourceTree = "<group>"; };
+		0D6378D829DFA93900935577 /* ug_saleh.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = ug_saleh.sqlite; sourceTree = "<group>"; };
+		0D6378D929DFA93900935577 /* dv_divehi.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = dv_divehi.sqlite; sourceTree = "<group>"; };
+		0D92064629DE38F6002C3863 /* MaciPadNavBackButtonToolbar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaciPadNavBackButtonToolbar.swift; sourceTree = "<group>"; };
+		0D92064829DE3C24002C3863 /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
+		0DCF4D4A29DE209B001ECF6B /* iPhoneDismissButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iPhoneDismissButton.swift; sourceTree = "<group>"; };
+		0DCF4D4D29DE2193001ECF6B /* iPhoneText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iPhoneText.swift; sourceTree = "<group>"; };
+		0DEAA48929E0013D001C0EA6 /* TranslationLanguages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslationLanguages.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0D38112429DE0A0400CA58D6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0D38113B29DE0A7300CA58D6 /* GRDB in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0D38111E29DE0A0400CA58D6 = {
+			isa = PBXGroup;
+			children = (
+				0D38112929DE0A0400CA58D6 /* TheHolyQuran */,
+				0D38112829DE0A0400CA58D6 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		0D38112829DE0A0400CA58D6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0D38112729DE0A0400CA58D6 /* The Holy Quran.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0D38112929DE0A0400CA58D6 /* TheHolyQuran */ = {
+			isa = PBXGroup;
+			children = (
+				0D38112A29DE0A0400CA58D6 /* TheHolyQuranApp.swift */,
+				0D38117A29DE0BF300CA58D6 /* Constants.swift */,
+				0D38114429DE0A8700CA58D6 /* Views */,
+				0D38117529DE0BC100CA58D6 /* Classes */,
+				0D38116D29DE0BA600CA58D6 /* Databases */,
+				0D38116629DE0B9A00CA58D6 /* Enums */,
+				0D38115E29DE0AE400CA58D6 /* Protocols */,
+				0D38115529DE0AD300CA58D6 /* Structs */,
+				0D38116529DE0B5C00CA58D6 /* Others */,
+				0D38112E29DE0A0500CA58D6 /* Assets.xcassets */,
+				0D38116429DE0B3C00CA58D6 /* TheHolyQuran.entitlements */,
+			);
+			path = TheHolyQuran;
+			sourceTree = "<group>";
+		};
+		0D38114429DE0A8700CA58D6 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				0D38113D29DE0A8000CA58D6 /* MainView.swift */,
+				0D38113C29DE0A8000CA58D6 /* SettingsView.swift */,
+				0D38113E29DE0A8000CA58D6 /* SurahView.swift */,
+				0D38113F29DE0A8000CA58D6 /* WelcomeView.swift */,
+				0D92064829DE3C24002C3863 /* SearchView.swift */,
+				0D38114529DE0A9000CA58D6 /* SubViews */,
+				0D38115029DE0AAC00CA58D6 /* Modifiers */,
+				0DCF4D4C29DE2172001ECF6B /* iPhone */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		0D38114529DE0A9000CA58D6 /* SubViews */ = {
+			isa = PBXGroup;
+			children = (
+				0D38114629DE0AA400CA58D6 /* AyaInfo.swift */,
+				0D38114829DE0AA400CA58D6 /* FontSettingsPopover.swift */,
+				0D38114929DE0AA400CA58D6 /* GoToPopover.swift */,
+				0D38114729DE0AA400CA58D6 /* NavToolbarContent.swift */,
+				0D38114A29DE0AA400CA58D6 /* TranslationSettingsPopover.swift */,
+			);
+			path = SubViews;
+			sourceTree = "<group>";
+		};
+		0D38115029DE0AAC00CA58D6 /* Modifiers */ = {
+			isa = PBXGroup;
+			children = (
+				0D38115229DE0AB700CA58D6 /* ConditionalModifierViewExtension.swift */,
+				0D92064629DE38F6002C3863 /* MaciPadNavBackButtonToolbar.swift */,
+			);
+			path = Modifiers;
+			sourceTree = "<group>";
+		};
+		0D38115529DE0AD300CA58D6 /* Structs */ = {
+			isa = PBXGroup;
+			children = (
+				0D38115829DE0ADC00CA58D6 /* AyaDBTable.swift */,
+				0D38115629DE0ADC00CA58D6 /* IncludedTranslation.swift */,
+				0D38115729DE0ADC00CA58D6 /* SurahDBTable.swift */,
+				0D38115929DE0ADC00CA58D6 /* TranslationDBTable.swift */,
+			);
+			path = Structs;
+			sourceTree = "<group>";
+		};
+		0D38115E29DE0AE400CA58D6 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				0D38116029DE0AEE00CA58D6 /* AppFonts.swift */,
+				0D38115F29DE0AEE00CA58D6 /* ConformArrayToRawRepresentable.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		0D38116529DE0B5C00CA58D6 /* Others */ = {
+			isa = PBXGroup;
+			children = (
+				0D38117C29DE0CE800CA58D6 /* LimitNumericTextField.swift */,
+			);
+			path = Others;
+			sourceTree = "<group>";
+		};
+		0D38116629DE0B9A00CA58D6 /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+				0D38116929DE0B9F00CA58D6 /* Fonts.swift */,
+				0D38116729DE0B9F00CA58D6 /* InterfaceLanguages.swift */,
+				0DEAA48929E0013D001C0EA6 /* TranslationLanguages.swift */,
+				0D38116829DE0B9F00CA58D6 /* Theme.swift */,
+			);
+			path = Enums;
+			sourceTree = "<group>";
+		};
+		0D38116D29DE0BA600CA58D6 /* Databases */ = {
+			isa = PBXGroup;
+			children = (
+				0D38116E29DE0BAD00CA58D6 /* TheHolyQuran.sqlite */,
+				0D63788529DFA92A00935577 /* Translations */,
+			);
+			path = Databases;
+			sourceTree = "<group>";
+		};
+		0D38117529DE0BC100CA58D6 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				0D38117729DE0BC800CA58D6 /* DatabaseHandler.swift */,
+				0D38117629DE0BC800CA58D6 /* SurahVM.swift */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		0D63788529DFA92A00935577 /* Translations */ = {
+			isa = PBXGroup;
+			children = (
+				0D63789E29DFA93800935577 /* am_sadiq.sqlite */,
+				0D6378BE29DFA93800935577 /* az_mammadaliyev.sqlite */,
+				0D6378CA29DFA93900935577 /* az_musayev.sqlite */,
+				0D6378D429DFA93900935577 /* ber_mensur.sqlite */,
+				0D63788B29DFA93800935577 /* bg_theophanov.sqlite */,
+				0D63788A29DFA93800935577 /* bn_bengali.sqlite */,
+				0D63788F29DFA93800935577 /* bn_hoque.sqlite */,
+				0D6378B229DFA93800935577 /* bs_korkut.sqlite */,
+				0D6378A929DFA93800935577 /* bs_mlivo.sqlite */,
+				0D6378BB29DFA93800935577 /* cs_hrbek.sqlite */,
+				0D6378A429DFA93800935577 /* cs_nykl.sqlite */,
+				0D63789829DFA93800935577 /* de_aburida.sqlite */,
+				0D6378D129DFA93900935577 /* de_bubenheim.sqlite */,
+				0D6378BC29DFA93800935577 /* de_khoury.sqlite */,
+				0D6378D929DFA93900935577 /* dv_divehi.sqlite */,
+				0D6378B329DFA93800935577 /* en_ahmedali.sqlite */,
+				0D63789B29DFA93800935577 /* en_ahmedraza.sqlite */,
+				0D63788D29DFA93800935577 /* en_arberry.sqlite */,
+				0D6378AF29DFA93800935577 /* en_daryabadi.sqlite */,
+				0D63788E29DFA93800935577 /* en_hilali.sqlite */,
+				0D6378B429DFA93800935577 /* en_maududi.sqlite */,
+				0D6378C929DFA93900935577 /* en_sarwar.sqlite */,
+				0D6378A029DFA93800935577 /* en_shakir.sqlite */,
+				0D6378C329DFA93800935577 /* en_wahiduddin.sqlite */,
+				0D6378C629DFA93900935577 /* en_yusufali.sqlite */,
+				0D6378A329DFA93800935577 /* es_cortes.sqlite */,
+				0D63789629DFA93800935577 /* es_garcia.sqlite */,
+				0D6378B829DFA93800935577 /* fa_fooladvand.sqlite */,
+				0D6378B029DFA93800935577 /* fa_ghomshei.sqlite */,
+				0D6378CE29DFA93900935577 /* fa_khorramshahi.sqlite */,
+				0D6378C729DFA93900935577 /* fa_mojtabavi.sqlite */,
+				0D6378A229DFA93800935577 /* ha_gumi.sqlite */,
+				0D6378B629DFA93800935577 /* hi_farooq.sqlite */,
+				0D6378A829DFA93800935577 /* hi_hindi.sqlite */,
+				0D63788C29DFA93800935577 /* id_indonesian.sqlite */,
+				0D63789229DFA93800935577 /* it_piccardo.sqlite */,
+				0D6378AC29DFA93800935577 /* ja_japanese.sqlite */,
+				0D6378CD29DFA93900935577 /* ko_korean.sqlite */,
+				0D6378A129DFA93800935577 /* ku_asan.sqlite */,
+				0D63789F29DFA93800935577 /* ml_abdulhameed.sqlite */,
+				0D6378A629DFA93800935577 /* ml_karakunnu.sqlite */,
+				0D63789529DFA93800935577 /* ms_basmeih.sqlite */,
+				0D6378C829DFA93900935577 /* nl_keyzer.sqlite */,
+				0D63789329DFA93800935577 /* nl_leemhuis.sqlite */,
+				0D63789929DFA93800935577 /* no_berg.sqlite */,
+				0D63788729DFA93800935577 /* pl_bielawskiego.sqlite */,
+				0D6378B529DFA93800935577 /* ps_abdulwali.sqlite */,
+				0D6378A529DFA93800935577 /* pt_elhayek.sqlite */,
+				0D6378BD29DFA93800935577 /* ro_grigore.sqlite */,
+				0D63789129DFA93800935577 /* ru_krachkovsky.sqlite */,
+				0D63789429DFA93800935577 /* ru_osmanov.sqlite */,
+				0D6378B929DFA93800935577 /* ru_porokhova.sqlite */,
+				0D6378A729DFA93800935577 /* ru_sablukov.sqlite */,
+				0D6378BA29DFA93800935577 /* sd_amroti.sqlite */,
+				0D6378AA29DFA93800935577 /* so_abduh.sqlite */,
+				0D6378CC29DFA93900935577 /* sq_ahmeti.sqlite */,
+				0D6378CB29DFA93900935577 /* sq_mehdiu.sqlite */,
+				0D6378AE29DFA93800935577 /* sq_nahi.sqlite */,
+				0D6378C129DFA93800935577 /* sv_bernstrom.sqlite */,
+				0D6378B729DFA93800935577 /* sw_barwani.sqlite */,
+				0D6378AB29DFA93800935577 /* ta_tamil.sqlite */,
+				0D6378CF29DFA93900935577 /* tg_ayati.sqlite */,
+				0D6378D629DFA93900935577 /* th_thai.sqlite */,
+				0D6378C429DFA93800935577 /* tr_ates.sqlite */,
+				0D63789029DFA93800935577 /* tr_diyanet.sqlite */,
+				0D6378B129DFA93800935577 /* tr_ozturk.sqlite */,
+				0D6378AD29DFA93800935577 /* tr_transliteration.sqlite */,
+				0D63788829DFA93800935577 /* tr_yazir.sqlite */,
+				0D6378C029DFA93800935577 /* tr_yildirim.sqlite */,
+				0D6378D029DFA93900935577 /* tr_yuksel.sqlite */,
+				0D6378D729DFA93900935577 /* tt_nugman.sqlite */,
+				0D6378D829DFA93900935577 /* ug_saleh.sqlite */,
+				0D63788929DFA93800935577 /* ur_ahmedali.sqlite */,
+				0D6378C229DFA93800935577 /* ur_kanzuliman.sqlite */,
+				0D6378D329DFA93900935577 /* ur_maududi.sqlite */,
+				0D63789C29DFA93800935577 /* uz_sodik.sqlite */,
+				0D63789A29DFA93800935577 /* zh_jian.sqlite */,
+				0D6378C529DFA93900935577 /* zh_majian.sqlite */,
+			);
+			path = Translations;
+			sourceTree = "<group>";
+		};
+		0DCF4D4C29DE2172001ECF6B /* iPhone */ = {
+			isa = PBXGroup;
+			children = (
+				0DCF4D4A29DE209B001ECF6B /* iPhoneDismissButton.swift */,
+				0DCF4D4D29DE2193001ECF6B /* iPhoneText.swift */,
+			);
+			path = iPhone;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0D38112629DE0A0400CA58D6 /* The Holy Quran */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0D38113629DE0A0500CA58D6 /* Build configuration list for PBXNativeTarget "The Holy Quran" */;
+			buildPhases = (
+				0D38112329DE0A0400CA58D6 /* Sources */,
+				0D38112429DE0A0400CA58D6 /* Frameworks */,
+				0D38112529DE0A0400CA58D6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "The Holy Quran";
+			packageProductDependencies = (
+				0D38113A29DE0A7300CA58D6 /* GRDB */,
+			);
+			productName = TheHolyQuran;
+			productReference = 0D38112729DE0A0400CA58D6 /* The Holy Quran.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0D38111F29DE0A0400CA58D6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					0D38112629DE0A0400CA58D6 = {
+						CreatedOnToolsVersion = 14.3;
+					};
+				};
+			};
+			buildConfigurationList = 0D38112229DE0A0400CA58D6 /* Build configuration list for PBXProject "TheHolyQuran" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 0D38111E29DE0A0400CA58D6;
+			packageReferences = (
+				0D38113929DE0A7300CA58D6 /* XCRemoteSwiftPackageReference "GRDB.swift" */,
+			);
+			productRefGroup = 0D38112829DE0A0400CA58D6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0D38112629DE0A0400CA58D6 /* The Holy Quran */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0D38112529DE0A0400CA58D6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0D63791129DFA93900935577 /* ro_grigore.sqlite in Resources */,
+				0D63791C29DFA93900935577 /* nl_keyzer.sqlite in Resources */,
+				0D63790929DFA93900935577 /* ps_abdulwali.sqlite in Resources */,
+				0D63790429DFA93900935577 /* fa_ghomshei.sqlite in Resources */,
+				0D63790B29DFA93900935577 /* sw_barwani.sqlite in Resources */,
+				0D6378FA29DFA93900935577 /* ml_karakunnu.sqlite in Resources */,
+				0D63791529DFA93900935577 /* sv_bernstrom.sqlite in Resources */,
+				0D6378DF29DFA93900935577 /* bg_theophanov.sqlite in Resources */,
+				0D6378EE29DFA93900935577 /* zh_jian.sqlite in Resources */,
+				0D63791629DFA93900935577 /* ur_kanzuliman.sqlite in Resources */,
+				0D6378FB29DFA93900935577 /* ru_sablukov.sqlite in Resources */,
+				0D6378F529DFA93900935577 /* ku_asan.sqlite in Resources */,
+				0D63790F29DFA93900935577 /* cs_hrbek.sqlite in Resources */,
+				0D6378E629DFA93900935577 /* it_piccardo.sqlite in Resources */,
+				0D6378ED29DFA93900935577 /* no_berg.sqlite in Resources */,
+				0D63792729DFA93900935577 /* ur_maududi.sqlite in Resources */,
+				0D63790729DFA93900935577 /* en_ahmedali.sqlite in Resources */,
+				0D63791229DFA93900935577 /* az_mammadaliyev.sqlite in Resources */,
+				0D6378EA29DFA93900935577 /* es_garcia.sqlite in Resources */,
+				0D63790A29DFA93900935577 /* hi_farooq.sqlite in Resources */,
+				0D63792429DFA93900935577 /* tr_yuksel.sqlite in Resources */,
+				0D63790829DFA93900935577 /* en_maududi.sqlite in Resources */,
+				0D63792229DFA93900935577 /* fa_khorramshahi.sqlite in Resources */,
+				0D6378DD29DFA93900935577 /* ur_ahmedali.sqlite in Resources */,
+				0D6378FE29DFA93900935577 /* so_abduh.sqlite in Resources */,
+				0D63790029DFA93900935577 /* ja_japanese.sqlite in Resources */,
+				0D63791829DFA93900935577 /* tr_ates.sqlite in Resources */,
+				0D6378F029DFA93900935577 /* uz_sodik.sqlite in Resources */,
+				0D6378F929DFA93900935577 /* pt_elhayek.sqlite in Resources */,
+				0D6378E829DFA93900935577 /* ru_osmanov.sqlite in Resources */,
+				0D63792029DFA93900935577 /* sq_ahmeti.sqlite in Resources */,
+				0D38112F29DE0A0500CA58D6 /* Assets.xcassets in Resources */,
+				0D63792C29DFA93900935577 /* ug_saleh.sqlite in Resources */,
+				0D6378EC29DFA93900935577 /* de_aburida.sqlite in Resources */,
+				0D63790129DFA93900935577 /* tr_transliteration.sqlite in Resources */,
+				0D6378F229DFA93900935577 /* am_sadiq.sqlite in Resources */,
+				0D6378E329DFA93900935577 /* bn_hoque.sqlite in Resources */,
+				0D6378FC29DFA93900935577 /* hi_hindi.sqlite in Resources */,
+				0D63792A29DFA93900935577 /* th_thai.sqlite in Resources */,
+				0D38116F29DE0BAD00CA58D6 /* TheHolyQuran.sqlite in Resources */,
+				0D63791E29DFA93900935577 /* az_musayev.sqlite in Resources */,
+				0D63792329DFA93900935577 /* tg_ayati.sqlite in Resources */,
+				0D63791929DFA93900935577 /* zh_majian.sqlite in Resources */,
+				0D6378E729DFA93900935577 /* nl_leemhuis.sqlite in Resources */,
+				0D6378E029DFA93900935577 /* id_indonesian.sqlite in Resources */,
+				0D63792B29DFA93900935577 /* tt_nugman.sqlite in Resources */,
+				0D6378E229DFA93900935577 /* en_hilali.sqlite in Resources */,
+				0D63791D29DFA93900935577 /* en_sarwar.sqlite in Resources */,
+				0D63791729DFA93900935577 /* en_wahiduddin.sqlite in Resources */,
+				0D6378E929DFA93900935577 /* ms_basmeih.sqlite in Resources */,
+				0D63790229DFA93900935577 /* sq_nahi.sqlite in Resources */,
+				0D63790529DFA93900935577 /* tr_ozturk.sqlite in Resources */,
+				0D63790629DFA93900935577 /* bs_korkut.sqlite in Resources */,
+				0D6378DE29DFA93900935577 /* bn_bengali.sqlite in Resources */,
+				0D63792829DFA93900935577 /* ber_mensur.sqlite in Resources */,
+				0D6378F329DFA93900935577 /* ml_abdulhameed.sqlite in Resources */,
+				0D63790E29DFA93900935577 /* sd_amroti.sqlite in Resources */,
+				0D6378F829DFA93900935577 /* cs_nykl.sqlite in Resources */,
+				0D6378F729DFA93900935577 /* es_cortes.sqlite in Resources */,
+				0D63791A29DFA93900935577 /* en_yusufali.sqlite in Resources */,
+				0D63791F29DFA93900935577 /* sq_mehdiu.sqlite in Resources */,
+				0D6378EF29DFA93900935577 /* en_ahmedraza.sqlite in Resources */,
+				0D6378DC29DFA93900935577 /* tr_yazir.sqlite in Resources */,
+				0D63791B29DFA93900935577 /* fa_mojtabavi.sqlite in Resources */,
+				0D6378F429DFA93900935577 /* en_shakir.sqlite in Resources */,
+				0D63792529DFA93900935577 /* de_bubenheim.sqlite in Resources */,
+				0D63792129DFA93900935577 /* ko_korean.sqlite in Resources */,
+				0D6378E129DFA93900935577 /* en_arberry.sqlite in Resources */,
+				0D6378FF29DFA93900935577 /* ta_tamil.sqlite in Resources */,
+				0D6378E429DFA93900935577 /* tr_diyanet.sqlite in Resources */,
+				0D63790C29DFA93900935577 /* fa_fooladvand.sqlite in Resources */,
+				0D6378F629DFA93900935577 /* ha_gumi.sqlite in Resources */,
+				0D63792D29DFA93900935577 /* dv_divehi.sqlite in Resources */,
+				0D63791429DFA93900935577 /* tr_yildirim.sqlite in Resources */,
+				0D6378DB29DFA93900935577 /* pl_bielawskiego.sqlite in Resources */,
+				0D63791029DFA93900935577 /* de_khoury.sqlite in Resources */,
+				0D6378FD29DFA93900935577 /* bs_mlivo.sqlite in Resources */,
+				0D63790329DFA93900935577 /* en_daryabadi.sqlite in Resources */,
+				0D63790D29DFA93900935577 /* ru_porokhova.sqlite in Resources */,
+				0D6378E529DFA93900935577 /* ru_krachkovsky.sqlite in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0D38112329DE0A0400CA58D6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0D31D00629DE12CE00997A34 /* Constants.swift in Sources */,
+				0D38117829DE0BC800CA58D6 /* SurahVM.swift in Sources */,
+				0D38115D29DE0ADC00CA58D6 /* TranslationDBTable.swift in Sources */,
+				0D38115B29DE0ADC00CA58D6 /* SurahDBTable.swift in Sources */,
+				0D38114329DE0A8000CA58D6 /* WelcomeView.swift in Sources */,
+				0DEAA48A29E0013D001C0EA6 /* TranslationLanguages.swift in Sources */,
+				0D38115C29DE0ADC00CA58D6 /* AyaDBTable.swift in Sources */,
+				0D38114229DE0A8000CA58D6 /* SurahView.swift in Sources */,
+				0D92064729DE38F6002C3863 /* MaciPadNavBackButtonToolbar.swift in Sources */,
+				0D38115A29DE0ADC00CA58D6 /* IncludedTranslation.swift in Sources */,
+				0D38116129DE0AEE00CA58D6 /* ConformArrayToRawRepresentable.swift in Sources */,
+				0D38116C29DE0B9F00CA58D6 /* Fonts.swift in Sources */,
+				0D38112B29DE0A0400CA58D6 /* TheHolyQuranApp.swift in Sources */,
+				0D38115429DE0AB700CA58D6 /* ConditionalModifierViewExtension.swift in Sources */,
+				0D38114B29DE0AA400CA58D6 /* AyaInfo.swift in Sources */,
+				0D38114129DE0A8000CA58D6 /* MainView.swift in Sources */,
+				0D38116229DE0AEE00CA58D6 /* AppFonts.swift in Sources */,
+				0D38114029DE0A8000CA58D6 /* SettingsView.swift in Sources */,
+				0D38117D29DE0CE800CA58D6 /* LimitNumericTextField.swift in Sources */,
+				0D38114E29DE0AA400CA58D6 /* GoToPopover.swift in Sources */,
+				0D38114C29DE0AA400CA58D6 /* NavToolbarContent.swift in Sources */,
+				0D38116A29DE0B9F00CA58D6 /* InterfaceLanguages.swift in Sources */,
+				0DCF4D4E29DE2193001ECF6B /* iPhoneText.swift in Sources */,
+				0DCF4D4B29DE209B001ECF6B /* iPhoneDismissButton.swift in Sources */,
+				0D38116B29DE0B9F00CA58D6 /* Theme.swift in Sources */,
+				0D92064929DE3C24002C3863 /* SearchView.swift in Sources */,
+				0D38114F29DE0AA400CA58D6 /* TranslationSettingsPopover.swift in Sources */,
+				0D38114D29DE0AA400CA58D6 /* FontSettingsPopover.swift in Sources */,
+				0D38117929DE0BC800CA58D6 /* DatabaseHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		0D38113429DE0A0500CA58D6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		0D38113529DE0A0500CA58D6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		0D38113729DE0A0500CA58D6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = TheHolyQuran/TheHolyQuran.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.education";
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MARKETING_VERSION = 0.1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.MacAppDevelop.TheHolyQuran;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		0D38113829DE0A0500CA58D6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = TheHolyQuran/TheHolyQuran.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.education";
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MARKETING_VERSION = 0.1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.MacAppDevelop.TheHolyQuran;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0D38112229DE0A0400CA58D6 /* Build configuration list for PBXProject "TheHolyQuran" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0D38113429DE0A0500CA58D6 /* Debug */,
+				0D38113529DE0A0500CA58D6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0D38113629DE0A0500CA58D6 /* Build configuration list for PBXNativeTarget "The Holy Quran" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0D38113729DE0A0500CA58D6 /* Debug */,
+				0D38113829DE0A0500CA58D6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		0D38113929DE0A7300CA58D6 /* XCRemoteSwiftPackageReference "GRDB.swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/groue/GRDB.swift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.10.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		0D38113A29DE0A7300CA58D6 /* GRDB */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0D38113929DE0A7300CA58D6 /* XCRemoteSwiftPackageReference "GRDB.swift" */;
+			productName = GRDB;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 0D38111F29DE0A0400CA58D6 /* Project object */;
+}
