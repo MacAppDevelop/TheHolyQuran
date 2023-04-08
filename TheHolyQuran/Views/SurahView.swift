@@ -163,7 +163,7 @@ struct SurahView: View {
         } label: {
             Label(isSaved ? "Unsave" : "Save", systemImage: isSaved ? "signpost.right.fill" : "signpost.right")
                 .labelStyle(.iconOnly)
-                .foregroundColor(isSaved ? .green : .black)
+                .foregroundColor(isSaved ? .green : .primary)
         }
         .buttonStyle(.borderless)
         .help(isSaved ? "Unsave" : "Save Here to Reload Later")
