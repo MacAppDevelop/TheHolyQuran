@@ -142,6 +142,11 @@ struct SurahView: View {
         .onChange(of: selectedTranslationSQLiteFileName) { _ in
             surahVM.updateTranslations(surahNumber: surah.surah_id, translationSQLiteFile: selectedTranslationSQLiteFileName)
         }
+        .onAppear {
+            if savedStateAya != 0 && savedStateSurah != 0 {
+                savedAyaID = AyaDBTable.generateIDFrom(surahNumber: Int64(savedStateSurah), ayaNumber: Int64(savedStateAya))
+            }
+        }
     }
     
     @ViewBuilder
