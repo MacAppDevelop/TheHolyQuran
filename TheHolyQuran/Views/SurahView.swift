@@ -79,7 +79,6 @@ struct SurahView: View {
                                 Text(aya.text)
                                     .font(Font.custom(inViewArabicFontFamily?.rawValue ?? arabicFontFamily.rawValue, size: inViewArabicFontSize ?? arabicFontSize))
                                     .lineSpacing(K.surahSpacing)
-                                    .textSelection(.enabled)
                                     .conditional(aya.sajda) { v in
                                         v.foregroundColor(.red)
                                     }
@@ -106,10 +105,10 @@ struct SurahView: View {
                                 HStack {
                                     Text(translation.text)
                                         .font(Font.custom(inViewTranslationFontFamily?.rawValue ?? translationFontFamily.rawValue, size: inViewTranslationFontSize ?? translationFontSize))
-                                        .textSelection(.enabled)
+                                        .foregroundColor(.primary)
                                         .padding(.horizontal, 10)
                                         .padding(.vertical, 6)
-                                        .background(.ultraThinMaterial)
+                                        .background(colorScheme == .dark ? .ultraThickMaterial : .ultraThinMaterial)
                                         .cornerRadius(8)
                                         .lineSpacing(K.translationLineSpacing)
                                     Spacer()
@@ -118,6 +117,7 @@ struct SurahView: View {
                                 .environment(\.layoutDirection, surahVM.includedTranslation.direction)
                             }
                         }
+                        .textSelection(.enabled)
                         
                         if aya != ayats.last {
                             Divider()
