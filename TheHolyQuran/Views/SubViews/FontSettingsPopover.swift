@@ -82,6 +82,8 @@ struct FontSettingsPopover: View {
                 }
                 
                 Button("Reset") {
+                    quranTextTypeSelection = .tanzilSimple
+                    
                     arabicFontFamily = .defaultFontFamily
                     arabicFontSize = ArabicFonts.defaultFontSize
                     
