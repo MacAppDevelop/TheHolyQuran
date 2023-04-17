@@ -46,7 +46,7 @@ class DatabaseHandler: ObservableObject {
         do {
             return try theHolyQuran.read { db in
                 try SurahDBTable
-                    .order(Column("surah_id"))
+                    .order(Column("surah_number"))
                     .fetchAll(db)
             }
         } catch {
@@ -59,8 +59,8 @@ class DatabaseHandler: ObservableObject {
         do {
             return try theHolyQuran.read { db in
                 try AyaDBTable
-                    .filter(Column("surah_id") == number)
-                    .order(Column("aya_id"))
+                    .filter(Column("surah_number") == number)
+                    .order(Column("aya_number"))
                     .fetchAll(db)
             }
         } catch {
@@ -72,8 +72,8 @@ class DatabaseHandler: ObservableObject {
     func ayaExist(surahNumber: Int64, ayaNumber: Int64) -> Bool {
         if let _ = try? theHolyQuran.read({ db in
             try AyaDBTable
-                .filter(Column("surah_id") == surahNumber)
-                .filter(Column("aya_id") == ayaNumber)
+                .filter(Column("surah_number") == surahNumber)
+                .filter(Column("aya_number") == ayaNumber)
                 .fetchOne(db)
         }) {
             return true
@@ -115,27 +115,40 @@ extension DatabaseHandler {
         var ayats: [AyaDBTable] = []
         
         do {
-            let searchSearchText = try theHolyQuran.read { db in
+            let searchIslamDBSearchText = try theHolyQuran.read { db in
                 try AyaDBTable
-                    .filter(sql: "searchtext LIKE ?", arguments: ["%\(text)%"])
-                    .order([Column("surah_id"), Column("aya_id")])
+                    .filter(sql: "searchtext_islamdb LIKE ?", arguments: ["%\(text)%"])
+                    .order([Column("surah_number"), Column("aya_number")])
                     .fetchAll(db)
             }
             
-            searchSearchText.forEach { aya in
+            searchIslamDBSearchText.forEach { aya in
                 if !ayats.contains(aya) {
                     ayats.append(aya)
                 }
             }
             
-            let searchText = try theHolyQuran.read { db in
+            let searchTanzilTextSimpleClean = try theHolyQuran.read { db in
                 try AyaDBTable
-                    .filter(sql: "text LIKE ?", arguments: ["%\(text)%"])
-                    .order([Column("surah_id"), Column("aya_id")])
+                    .filter(sql: "text_tanzil_simple_clean LIKE ?", arguments: ["%\(text)%"])
+                    .order([Column("surah_number"), Column("aya_number")])
                     .fetchAll(db)
             }
             
-            searchText.forEach { aya in
+            searchTanzilTextSimpleClean.forEach { aya in
+                if !ayats.contains(aya) {
+                    ayats.append(aya)
+                }
+            }
+            
+            let searchTanzilTextSimpleMin = try theHolyQuran.read { db in
+                try AyaDBTable
+                    .filter(sql: "text_tanzil_simple_min LIKE ?", arguments: ["%\(text)%"])
+                    .order([Column("surah_number"), Column("aya_number")])
+                    .fetchAll(db)
+            }
+            
+            searchTanzilTextSimpleMin.forEach { aya in
                 if !ayats.contains(aya) {
                     ayats.append(aya)
                 }

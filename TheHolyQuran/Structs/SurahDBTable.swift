@@ -13,7 +13,7 @@ import UIKit
 import GRDB
 
 struct SurahDBTable: Codable, FetchableRecord, PersistableRecord, Hashable, Identifiable, Equatable {
-    var surah_id: Int64
+    var surah_number: Int64
     var name: String
     var name_english: String
     var place: Int64
@@ -35,7 +35,7 @@ struct SurahDBTable: Codable, FetchableRecord, PersistableRecord, Hashable, Iden
     }
     
     var id: Int64 {
-        surah_id
+        surah_number
     }
     
     var nameWithoutDiacritics: String {
@@ -56,7 +56,7 @@ struct SurahDBTable: Codable, FetchableRecord, PersistableRecord, Hashable, Iden
             name.contains(text) ||
             name_english.lowercased().contains(text.lowercased()) ||
             existsInEnglishWithVariations(text) ||
-            (Int(text) ?? 0 > 0 && Int(surah_id) == Int(text)) ||
+            (Int(text) ?? 0 > 0 && Int(surah_number) == Int(text)) ||
             placeName.contains(text) ||
             placeNameSimple.contains(text) ||
             nameWithoutDiacritics.contains(text) ||
@@ -76,6 +76,6 @@ struct SurahDBTable: Codable, FetchableRecord, PersistableRecord, Hashable, Iden
     }
     
     static func ==(lhs: SurahDBTable, rhs: SurahDBTable) -> Bool {
-        return lhs.surah_id == rhs.surah_id
+        return lhs.surah_number == rhs.surah_number
     }
 }

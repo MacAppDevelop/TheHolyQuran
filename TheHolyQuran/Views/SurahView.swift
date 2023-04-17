@@ -10,6 +10,9 @@ import GRDB
 
 struct SurahView: View {
     @Environment(\.colorScheme) var colorScheme
+    
+    @AppStorage(K.StorageKeys.quranTextTypeSelection) private var quranTextTypeSelection: QuranTextType = .tanzilSimple
+    
     @AppStorage(K.StorageKeys.selectedTranslationSQLiteFileName) private var selectedTranslationSQLiteFileName: String = K.defaultTranslationSQLiteFileName
     
     @AppStorage(K.StorageKeys.arabicFontFamily) private var arabicFontFamily: ArabicFonts = .defaultFontFamily
@@ -24,12 +27,14 @@ struct SurahView: View {
     
     @EnvironmentObject private var surahVM: SurahVM
     
+    @State private var inViewQuranTextType: QuranTextType? = nil
     @State private var inViewArabicFontFamily: ArabicFonts? = nil
     @State private var inViewArabicFontSize: Double? = nil
     @State private var inViewTranslationFontFamily: TranslationFonts? = nil
     @State private var inViewTranslationFontSize: Double? = nil
     
     private var fontsChanged: [String] {[
+        quranTextTypeSelection.rawValue,
         arabicFontFamily.rawValue,
         String(arabicFontSize),
         translationFontFamily.rawValue,
@@ -42,6 +47,7 @@ struct SurahView: View {
         if let surah = surahVM.surah, let ayats = surahVM.ayats {
             displaySurah(surah: surah, ayats: ayats)
                 .onChange(of: fontsChanged) { _ in // Without this fonts won't change instantly
+                    inViewQuranTextType = quranTextTypeSelection
                     inViewArabicFontFamily = arabicFontFamily
                     inViewArabicFontSize = arabicFontSize
                     inViewTranslationFontFamily = translationFontFamily
@@ -76,24 +82,26 @@ struct SurahView: View {
                     ForEach(ayats) { aya in
                         VStack {
                             HStack {
-                                Text(aya.text)
+                                Text(aya.getText(inViewQuranTextType ?? quranTextTypeSelection))
                                     .font(Font.custom(inViewArabicFontFamily?.rawValue ?? arabicFontFamily.rawValue, size: inViewArabicFontSize ?? arabicFontSize))
                                     .lineSpacing(K.surahSpacing)
                                     .conditional(aya.sajda) { v in
-                                        v.foregroundColor(.red)
+                                        v.foregroundColor(aya.sajdaObligatory ? .red : .orange)
                                     }
                                 
                                 Spacer()
                                 
                                 if aya.sajda {
-                                    Label("السجدة", systemImage: "person.fill.turn.right").labelStyle(.titleAndIcon)
+                                    let alSajda = "السجدة"
+                                    let alSajdaObligatory = "السجدة الواجبة"
+                                    Label(aya.sajdaObligatory ? alSajdaObligatory : alSajda, systemImage: "person.fill.turn.right").labelStyle(.titleAndIcon)
                                 }
                                 
                                 saveStateButton(for: aya)
                                 
-                                if aya.aya_id > 0 {
+                                if aya.aya_number > 0 {
                                     AyaInfo(aya: aya)
-                                    verseNumber(aya.aya_id)
+                                    verseNumber(aya.aya_number)
                                 }
                             }
                             .id(aya.id)
@@ -101,7 +109,7 @@ struct SurahView: View {
                                 v.padding(.top, K.surahSpacing / 2)
                             }
                             
-                            if surahVM.includedTranslation.notDisabled, let translation = surahVM.translations?.first(where: { $0.aya == aya.aya_id }) {
+                            if surahVM.includedTranslation.notDisabled, let translation = surahVM.translations?.first(where: { $0.aya == aya.aya_number }) {
                                 HStack {
                                     Text(translation.text)
                                         .font(Font.custom(inViewTranslationFontFamily?.rawValue ?? translationFontFamily.rawValue, size: inViewTranslationFontSize ?? translationFontSize))
@@ -140,7 +148,7 @@ struct SurahView: View {
             }
         }
         .onChange(of: selectedTranslationSQLiteFileName) { _ in
-            surahVM.updateTranslations(surahNumber: surah.surah_id, translationSQLiteFile: selectedTranslationSQLiteFileName)
+            surahVM.updateTranslations(surahNumber: surah.surah_number, translationSQLiteFile: selectedTranslationSQLiteFileName)
         }
         .onAppear {
             if savedStateAya != 0 && savedStateSurah != 0 {
@@ -151,15 +159,15 @@ struct SurahView: View {
     
     @ViewBuilder
     func saveStateButton(for aya: AyaDBTable) -> some View {
-        let isSaved = (savedAyaID == aya.id || (aya.aya_id == savedStateAya && aya.surah_id == savedStateSurah))
+        let isSaved = (savedAyaID == aya.id || (aya.aya_number == savedStateAya && aya.surah_number == savedStateSurah))
         Button {
             if isSaved {
                 savedStateSurah = 0
                 savedStateAya = 0
                 savedAyaID = nil
             } else {
-                savedStateSurah = Int(aya.surah_id)
-                savedStateAya = Int(aya.aya_id)
+                savedStateSurah = Int(aya.surah_number)
+                savedStateAya = Int(aya.aya_number)
                 savedAyaID = aya.id
                 #if DEBUG
                 print("Saved State - Surah: \(savedStateSurah), Aya: \(savedStateAya)")

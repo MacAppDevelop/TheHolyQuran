@@ -31,7 +31,7 @@ class SurahVM: ObservableObject {
     private var db = DatabaseHandler.shared
     
     func setSelectedSurah(surahNumber: Int64) {
-        if let getSurah = db.surahs.first(where: { $0.surah_id == surahNumber }),
+        if let getSurah = db.surahs.first(where: { $0.surah_number == surahNumber }),
            let getAyats = db.fetchSurahContent(surahNumber)
         {
             DispatchQueue.main.async {

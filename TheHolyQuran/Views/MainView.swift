@@ -77,26 +77,26 @@ struct MainView: View {
                     ForEach(surahsResults) { surah in
                         NavigationLink(value: surah) {
                             HStack {
-                                Text("\(surah.surah_id)").font(.footnote).foregroundColor(.secondary)
+                                Text("\(surah.surah_number)").font(.footnote).foregroundColor(.secondary)
                                 Text(surah.name_english)
                                 Spacer()
                                 Text(surah.name)
                                 
-                                if bookmarkedSurahs.contains(String(surah.surah_id)) {
+                                if bookmarkedSurahs.contains(String(surah.surah_number)) {
                                     Image(systemName: "bookmark.fill")
                                 }
                             }
                         }
                         .contextMenu {
-                            if bookmarkedSurahs.contains(String(surah.surah_id)) {
+                            if bookmarkedSurahs.contains(String(surah.surah_number)) {
                                 Button {
-                                    bookmarkedSurahs.removeAll(where: { $0 == String(surah.surah_id) })
+                                    bookmarkedSurahs.removeAll(where: { $0 == String(surah.surah_number) })
                                 } label: {
                                     Label("Unbookmark", systemImage: "bookmark.slash").labelStyle(.titleAndIcon)
                                 }
                             } else {
                                 Button {
-                                    bookmarkedSurahs.append(String(surah.surah_id))
+                                    bookmarkedSurahs.append(String(surah.surah_number))
                                 } label: {
                                     Label("Bookmark", systemImage: "bookmark").labelStyle(.titleAndIcon)
                                 }
@@ -151,7 +151,7 @@ struct MainView: View {
         .toolbar {
             NavToolbarContent()
         }
-        .onChange(of: selectedSurah?.surah_id ?? 0) { newValue in
+        .onChange(of: selectedSurah?.surah_number ?? 0) { newValue in
             surahVM.setSelectedSurah(surahNumber: newValue)
         }
         .onChange(of: selectedTranslationSQLiteFileName) { newValue in
@@ -174,9 +174,9 @@ struct MainView: View {
     
     var surahsResults: [SurahDBTable] {
         if showBookmarkedOnly && !surahSearchText.isEmpty {
-            return db.surahs.filter { bookmarkedSurahs.contains(String($0.surah_id)) && $0.existsInSearch(surahSearchText) }
+            return db.surahs.filter { bookmarkedSurahs.contains(String($0.surah_number)) && $0.existsInSearch(surahSearchText) }
         } else if showBookmarkedOnly {
-            return db.surahs.filter { bookmarkedSurahs.contains(String($0.surah_id)) }
+            return db.surahs.filter { bookmarkedSurahs.contains(String($0.surah_number)) }
         } else if !surahSearchText.isEmpty {
             return db.surahs.filter { $0.existsInSearch(surahSearchText) }
         } else {

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>ATSApplicationFontsPath</key>
+	<string></string>
+	<key>UIAppFonts</key>
+	<array>
+		<string>KFGQPC Uthmanic Script HAFS Regular.otf</string>
+		<string>SF-Arabic.ttf</string>
+		<string>SF-Arabic-Rounded.ttf</string>
+		<string>Lateef.ttf</string>
+		<string>Scheherazade.ttf</string>
+		<string>DroidKufi-Regular.ttf</string>
+		<string>DroidNaskh-Regular.ttf</string>
+		<string>DecoType Thuluth II.ttf</string>
+		<string>KFGQPC Uthman Taha Naskh Regular.ttf</string>
+		<string>DecoType Naskh.ttf</string>
+		<string>DecoType Thuluth.ttf</string>
+	</array>
+</dict>
+</plist>

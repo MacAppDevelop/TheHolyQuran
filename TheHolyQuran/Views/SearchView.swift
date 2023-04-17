@@ -13,6 +13,8 @@ struct SearchView: View {
     @EnvironmentObject private var db: DatabaseHandler
     @Environment(\.colorScheme) var colorScheme
     
+    @AppStorage(K.StorageKeys.quranTextTypeSelection) private var quranTextTypeSelection: QuranTextType = .tanzilSimple
+    
     @AppStorage(K.StorageKeys.arabicFontFamily) private var arabicFontFamily: ArabicFonts = .defaultFontFamily
     @AppStorage(K.StorageKeys.arabicFontSize) private var arabicFontSize: Double = ArabicFonts.defaultFontSize
     
@@ -61,7 +63,7 @@ struct SearchView: View {
                     
                     ForEach(foundAyats) { aya in
                         HStack {
-                            Text(aya.text)
+                            Text(aya.getText(quranTextTypeSelection))
                                 .font(Font.custom(arabicFontFamily.rawValue, size: arabicFontSize))
                                 .textSelection(.enabled)
                                 .padding(.horizontal, 10)
@@ -76,11 +78,11 @@ struct SearchView: View {
                                 Label("السجدة", systemImage: "person.fill.turn.right").labelStyle(.titleAndIcon)
                             }
                             
-                            if aya.aya_id > 0 {
+                            if aya.aya_number > 0 {
                                 AyaInfo(aya: aya)
                             }
                             
-                            goToButton(surahNumber: aya.surah_id, ayaNumber: aya.aya_id)
+                            goToButton(surahNumber: aya.surah_number, ayaNumber: aya.aya_number)
 
                         }
                         Divider()

@@ -34,6 +34,17 @@
 		0D38117829DE0BC800CA58D6 /* SurahVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D38117629DE0BC800CA58D6 /* SurahVM.swift */; };
 		0D38117929DE0BC800CA58D6 /* DatabaseHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D38117729DE0BC800CA58D6 /* DatabaseHandler.swift */; };
 		0D38117D29DE0CE800CA58D6 /* LimitNumericTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D38117C29DE0CE800CA58D6 /* LimitNumericTextField.swift */; };
+		0D386DA129ECA48800788398 /* SF-Arabic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0D386DA029ECA48800788398 /* SF-Arabic.ttf */; };
+		0D386DA329ECA49600788398 /* SF-Arabic-Rounded.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0D386DA229ECA49600788398 /* SF-Arabic-Rounded.ttf */; };
+		0D386DA729ECA92100788398 /* Lateef.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0D386DA629ECA92100788398 /* Lateef.ttf */; };
+		0D386DAB29ECAA3E00788398 /* Scheherazade.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0D386DAA29ECAA3E00788398 /* Scheherazade.ttf */; };
+		0D386DAD29ECABE300788398 /* DroidKufi-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0D386DAC29ECABE300788398 /* DroidKufi-Regular.ttf */; };
+		0D386DAF29ECAC5D00788398 /* DroidNaskh-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0D386DAE29ECAC5D00788398 /* DroidNaskh-Regular.ttf */; };
+		0D386DB129ECAE5D00788398 /* DecoType Thuluth II.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0D386DB029ECAE5D00788398 /* DecoType Thuluth II.ttf */; };
+		0D386DB329ECAF0800788398 /* KFGQPC Uthmanic Script HAFS Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 0D386DB229ECAF0800788398 /* KFGQPC Uthmanic Script HAFS Regular.otf */; };
+		0D386DB529ECB0EB00788398 /* KFGQPC Uthman Taha Naskh Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0D386DB429ECB0EB00788398 /* KFGQPC Uthman Taha Naskh Regular.ttf */; };
+		0D386DB929ECB19500788398 /* DecoType Naskh.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0D386DB829ECB19500788398 /* DecoType Naskh.ttf */; };
+		0D386DBB29ECB41400788398 /* DecoType Thuluth.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0D386DBA29ECB41400788398 /* DecoType Thuluth.ttf */; };
 		0D6378DB29DFA93900935577 /* pl_bielawskiego.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 0D63788729DFA93800935577 /* pl_bielawskiego.sqlite */; };
 		0D6378DC29DFA93900935577 /* tr_yazir.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 0D63788829DFA93800935577 /* tr_yazir.sqlite */; };
 		0D6378DD29DFA93900935577 /* ur_ahmedali.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 0D63788929DFA93800935577 /* ur_ahmedali.sqlite */; };
@@ -112,10 +123,13 @@
 		0D63792B29DFA93900935577 /* tt_nugman.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 0D6378D729DFA93900935577 /* tt_nugman.sqlite */; };
 		0D63792C29DFA93900935577 /* ug_saleh.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 0D6378D829DFA93900935577 /* ug_saleh.sqlite */; };
 		0D63792D29DFA93900935577 /* dv_divehi.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 0D6378D929DFA93900935577 /* dv_divehi.sqlite */; };
+		0D73A8DF29EB361B001AAACE /* QuranTextType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D73A8DE29EB361B001AAACE /* QuranTextType.swift */; };
+		0D7BFDD029E9E46100BCD9F6 /* QuranMetadata.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D7BFDCF29E9E46100BCD9F6 /* QuranMetadata.swift */; };
 		0D92064729DE38F6002C3863 /* MaciPadNavBackButtonToolbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D92064629DE38F6002C3863 /* MaciPadNavBackButtonToolbar.swift */; };
 		0D92064929DE3C24002C3863 /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D92064829DE3C24002C3863 /* SearchView.swift */; };
 		0DCF4D4B29DE209B001ECF6B /* iPhoneDismissButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DCF4D4A29DE209B001ECF6B /* iPhoneDismissButton.swift */; };
 		0DCF4D4E29DE2193001ECF6B /* iPhoneText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DCF4D4D29DE2193001ECF6B /* iPhoneText.swift */; };
+		0DD5105329ECCD5200B51434 /* fr_hamidullah.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 0DD5105229ECCD5200B51434 /* fr_hamidullah.sqlite */; };
 		0DEAA48A29E0013D001C0EA6 /* TranslationLanguages.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DEAA48929E0013D001C0EA6 /* TranslationLanguages.swift */; };
 /* End PBXBuildFile section */
 
@@ -148,6 +162,18 @@
 		0D38117729DE0BC800CA58D6 /* DatabaseHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DatabaseHandler.swift; sourceTree = "<group>"; };
 		0D38117A29DE0BF300CA58D6 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		0D38117C29DE0CE800CA58D6 /* LimitNumericTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LimitNumericTextField.swift; sourceTree = "<group>"; };
+		0D386D9D29ECA32F00788398 /* The-Holy-Quran-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "The-Holy-Quran-Info.plist"; sourceTree = "<group>"; };
+		0D386DA029ECA48800788398 /* SF-Arabic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Arabic.ttf"; sourceTree = "<group>"; };
+		0D386DA229ECA49600788398 /* SF-Arabic-Rounded.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Arabic-Rounded.ttf"; sourceTree = "<group>"; };
+		0D386DA629ECA92100788398 /* Lateef.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Lateef.ttf; sourceTree = "<group>"; };
+		0D386DAA29ECAA3E00788398 /* Scheherazade.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Scheherazade.ttf; sourceTree = "<group>"; };
+		0D386DAC29ECABE300788398 /* DroidKufi-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DroidKufi-Regular.ttf"; sourceTree = "<group>"; };
+		0D386DAE29ECAC5D00788398 /* DroidNaskh-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DroidNaskh-Regular.ttf"; sourceTree = "<group>"; };
+		0D386DB029ECAE5D00788398 /* DecoType Thuluth II.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DecoType Thuluth II.ttf"; sourceTree = "<group>"; };
+		0D386DB229ECAF0800788398 /* KFGQPC Uthmanic Script HAFS Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "KFGQPC Uthmanic Script HAFS Regular.otf"; sourceTree = "<group>"; };
+		0D386DB429ECB0EB00788398 /* KFGQPC Uthman Taha Naskh Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "KFGQPC Uthman Taha Naskh Regular.ttf"; sourceTree = "<group>"; };
+		0D386DB829ECB19500788398 /* DecoType Naskh.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DecoType Naskh.ttf"; sourceTree = "<group>"; };
+		0D386DBA29ECB41400788398 /* DecoType Thuluth.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DecoType Thuluth.ttf"; sourceTree = "<group>"; };
 		0D63788729DFA93800935577 /* pl_bielawskiego.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = pl_bielawskiego.sqlite; sourceTree = "<group>"; };
 		0D63788829DFA93800935577 /* tr_yazir.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = tr_yazir.sqlite; sourceTree = "<group>"; };
 		0D63788929DFA93800935577 /* ur_ahmedali.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = ur_ahmedali.sqlite; sourceTree = "<group>"; };
@@ -226,10 +252,13 @@
 		0D6378D729DFA93900935577 /* tt_nugman.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = tt_nugman.sqlite; sourceTree = "<group>"; };
 		0D6378D829DFA93900935577 /* ug_saleh.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = ug_saleh.sqlite; sourceTree = "<group>"; };
 		0D6378D929DFA93900935577 /* dv_divehi.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = dv_divehi.sqlite; sourceTree = "<group>"; };
+		0D73A8DE29EB361B001AAACE /* QuranTextType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuranTextType.swift; sourceTree = "<group>"; };
+		0D7BFDCF29E9E46100BCD9F6 /* QuranMetadata.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuranMetadata.swift; sourceTree = "<group>"; };
 		0D92064629DE38F6002C3863 /* MaciPadNavBackButtonToolbar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaciPadNavBackButtonToolbar.swift; sourceTree = "<group>"; };
 		0D92064829DE3C24002C3863 /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
 		0DCF4D4A29DE209B001ECF6B /* iPhoneDismissButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iPhoneDismissButton.swift; sourceTree = "<group>"; };
 		0DCF4D4D29DE2193001ECF6B /* iPhoneText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iPhoneText.swift; sourceTree = "<group>"; };
+		0DD5105229ECCD5200B51434 /* fr_hamidullah.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = fr_hamidullah.sqlite; sourceTree = "<group>"; };
 		0DEAA48929E0013D001C0EA6 /* TranslationLanguages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslationLanguages.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -248,6 +277,7 @@
 		0D38111E29DE0A0400CA58D6 = {
 			isa = PBXGroup;
 			children = (
+				0D386D9D29ECA32F00788398 /* The-Holy-Quran-Info.plist */,
 				0D38112929DE0A0400CA58D6 /* TheHolyQuran */,
 				0D38112829DE0A0400CA58D6 /* Products */,
 			);
@@ -273,6 +303,8 @@
 				0D38115E29DE0AE400CA58D6 /* Protocols */,
 				0D38115529DE0AD300CA58D6 /* Structs */,
 				0D38116529DE0B5C00CA58D6 /* Others */,
+				0D7BFDCE29E9E44C00BCD9F6 /* QuranMetadata */,
+				0D386D9A29ECA27A00788398 /* Fonts */,
 				0D38112E29DE0A0500CA58D6 /* Assets.xcassets */,
 				0D38116429DE0B3C00CA58D6 /* TheHolyQuran.entitlements */,
 			);
@@ -346,6 +378,7 @@
 		0D38116629DE0B9A00CA58D6 /* Enums */ = {
 			isa = PBXGroup;
 			children = (
+				0D73A8DE29EB361B001AAACE /* QuranTextType.swift */,
 				0D38116929DE0B9F00CA58D6 /* Fonts.swift */,
 				0D38116729DE0B9F00CA58D6 /* InterfaceLanguages.swift */,
 				0DEAA48929E0013D001C0EA6 /* TranslationLanguages.swift */,
@@ -370,6 +403,24 @@
 				0D38117629DE0BC800CA58D6 /* SurahVM.swift */,
 			);
 			path = Classes;
+			sourceTree = "<group>";
+		};
+		0D386D9A29ECA27A00788398 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				0D386DA029ECA48800788398 /* SF-Arabic.ttf */,
+				0D386DA229ECA49600788398 /* SF-Arabic-Rounded.ttf */,
+				0D386DAC29ECABE300788398 /* DroidKufi-Regular.ttf */,
+				0D386DAE29ECAC5D00788398 /* DroidNaskh-Regular.ttf */,
+				0D386DA629ECA92100788398 /* Lateef.ttf */,
+				0D386DAA29ECAA3E00788398 /* Scheherazade.ttf */,
+				0D386DB229ECAF0800788398 /* KFGQPC Uthmanic Script HAFS Regular.otf */,
+				0D386DB429ECB0EB00788398 /* KFGQPC Uthman Taha Naskh Regular.ttf */,
+				0D386DBA29ECB41400788398 /* DecoType Thuluth.ttf */,
+				0D386DB029ECAE5D00788398 /* DecoType Thuluth II.ttf */,
+				0D386DB829ECB19500788398 /* DecoType Naskh.ttf */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 		0D63788529DFA92A00935577 /* Translations */ = {
@@ -406,6 +457,7 @@
 				0D6378B029DFA93800935577 /* fa_ghomshei.sqlite */,
 				0D6378CE29DFA93900935577 /* fa_khorramshahi.sqlite */,
 				0D6378C729DFA93900935577 /* fa_mojtabavi.sqlite */,
+				0DD5105229ECCD5200B51434 /* fr_hamidullah.sqlite */,
 				0D6378A229DFA93800935577 /* ha_gumi.sqlite */,
 				0D6378B629DFA93800935577 /* hi_farooq.sqlite */,
 				0D6378A829DFA93800935577 /* hi_hindi.sqlite */,
@@ -455,6 +507,14 @@
 				0D6378C529DFA93900935577 /* zh_majian.sqlite */,
 			);
 			path = Translations;
+			sourceTree = "<group>";
+		};
+		0D7BFDCE29E9E44C00BCD9F6 /* QuranMetadata */ = {
+			isa = PBXGroup;
+			children = (
+				0D7BFDCF29E9E46100BCD9F6 /* QuranMetadata.swift */,
+			);
+			path = QuranMetadata;
 			sourceTree = "<group>";
 		};
 		0DCF4D4C29DE2172001ECF6B /* iPhone */ = {
@@ -532,6 +592,7 @@
 			files = (
 				0D63791129DFA93900935577 /* ro_grigore.sqlite in Resources */,
 				0D63791C29DFA93900935577 /* nl_keyzer.sqlite in Resources */,
+				0D386DA129ECA48800788398 /* SF-Arabic.ttf in Resources */,
 				0D63790929DFA93900935577 /* ps_abdulwali.sqlite in Resources */,
 				0D63790429DFA93900935577 /* fa_ghomshei.sqlite in Resources */,
 				0D63790B29DFA93900935577 /* sw_barwani.sqlite in Resources */,
@@ -539,13 +600,18 @@
 				0D63791529DFA93900935577 /* sv_bernstrom.sqlite in Resources */,
 				0D6378DF29DFA93900935577 /* bg_theophanov.sqlite in Resources */,
 				0D6378EE29DFA93900935577 /* zh_jian.sqlite in Resources */,
+				0D386DB929ECB19500788398 /* DecoType Naskh.ttf in Resources */,
 				0D63791629DFA93900935577 /* ur_kanzuliman.sqlite in Resources */,
 				0D6378FB29DFA93900935577 /* ru_sablukov.sqlite in Resources */,
 				0D6378F529DFA93900935577 /* ku_asan.sqlite in Resources */,
 				0D63790F29DFA93900935577 /* cs_hrbek.sqlite in Resources */,
 				0D6378E629DFA93900935577 /* it_piccardo.sqlite in Resources */,
+				0DD5105329ECCD5200B51434 /* fr_hamidullah.sqlite in Resources */,
 				0D6378ED29DFA93900935577 /* no_berg.sqlite in Resources */,
+				0D386DB329ECAF0800788398 /* KFGQPC Uthmanic Script HAFS Regular.otf in Resources */,
 				0D63792729DFA93900935577 /* ur_maududi.sqlite in Resources */,
+				0D386DAD29ECABE300788398 /* DroidKufi-Regular.ttf in Resources */,
+				0D386DB129ECAE5D00788398 /* DecoType Thuluth II.ttf in Resources */,
 				0D63790729DFA93900935577 /* en_ahmedali.sqlite in Resources */,
 				0D63791229DFA93900935577 /* az_mammadaliyev.sqlite in Resources */,
 				0D6378EA29DFA93900935577 /* es_garcia.sqlite in Resources */,
@@ -553,7 +619,9 @@
 				0D63792429DFA93900935577 /* tr_yuksel.sqlite in Resources */,
 				0D63790829DFA93900935577 /* en_maududi.sqlite in Resources */,
 				0D63792229DFA93900935577 /* fa_khorramshahi.sqlite in Resources */,
+				0D386DA729ECA92100788398 /* Lateef.ttf in Resources */,
 				0D6378DD29DFA93900935577 /* ur_ahmedali.sqlite in Resources */,
+				0D386DAB29ECAA3E00788398 /* Scheherazade.ttf in Resources */,
 				0D6378FE29DFA93900935577 /* so_abduh.sqlite in Resources */,
 				0D63790029DFA93900935577 /* ja_japanese.sqlite in Resources */,
 				0D63791829DFA93900935577 /* tr_ates.sqlite in Resources */,
@@ -563,6 +631,7 @@
 				0D63792029DFA93900935577 /* sq_ahmeti.sqlite in Resources */,
 				0D38112F29DE0A0500CA58D6 /* Assets.xcassets in Resources */,
 				0D63792C29DFA93900935577 /* ug_saleh.sqlite in Resources */,
+				0D386DA329ECA49600788398 /* SF-Arabic-Rounded.ttf in Resources */,
 				0D6378EC29DFA93900935577 /* de_aburida.sqlite in Resources */,
 				0D63790129DFA93900935577 /* tr_transliteration.sqlite in Resources */,
 				0D6378F229DFA93900935577 /* am_sadiq.sqlite in Resources */,
@@ -574,7 +643,9 @@
 				0D63792329DFA93900935577 /* tg_ayati.sqlite in Resources */,
 				0D63791929DFA93900935577 /* zh_majian.sqlite in Resources */,
 				0D6378E729DFA93900935577 /* nl_leemhuis.sqlite in Resources */,
+				0D386DAF29ECAC5D00788398 /* DroidNaskh-Regular.ttf in Resources */,
 				0D6378E029DFA93900935577 /* id_indonesian.sqlite in Resources */,
+				0D386DB529ECB0EB00788398 /* KFGQPC Uthman Taha Naskh Regular.ttf in Resources */,
 				0D63792B29DFA93900935577 /* tt_nugman.sqlite in Resources */,
 				0D6378E229DFA93900935577 /* en_hilali.sqlite in Resources */,
 				0D63791D29DFA93900935577 /* en_sarwar.sqlite in Resources */,
@@ -604,6 +675,7 @@
 				0D6378F629DFA93900935577 /* ha_gumi.sqlite in Resources */,
 				0D63792D29DFA93900935577 /* dv_divehi.sqlite in Resources */,
 				0D63791429DFA93900935577 /* tr_yildirim.sqlite in Resources */,
+				0D386DBB29ECB41400788398 /* DecoType Thuluth.ttf in Resources */,
 				0D6378DB29DFA93900935577 /* pl_bielawskiego.sqlite in Resources */,
 				0D63791029DFA93900935577 /* de_khoury.sqlite in Resources */,
 				0D6378FD29DFA93900935577 /* bs_mlivo.sqlite in Resources */,
@@ -633,6 +705,7 @@
 				0D38116129DE0AEE00CA58D6 /* ConformArrayToRawRepresentable.swift in Sources */,
 				0D38116C29DE0B9F00CA58D6 /* Fonts.swift in Sources */,
 				0D38112B29DE0A0400CA58D6 /* TheHolyQuranApp.swift in Sources */,
+				0D73A8DF29EB361B001AAACE /* QuranTextType.swift in Sources */,
 				0D38115429DE0AB700CA58D6 /* ConditionalModifierViewExtension.swift in Sources */,
 				0D38114B29DE0AA400CA58D6 /* AyaInfo.swift in Sources */,
 				0D38114129DE0A8000CA58D6 /* MainView.swift in Sources */,
@@ -645,6 +718,7 @@
 				0DCF4D4E29DE2193001ECF6B /* iPhoneText.swift in Sources */,
 				0DCF4D4B29DE209B001ECF6B /* iPhoneDismissButton.swift in Sources */,
 				0D38116B29DE0B9F00CA58D6 /* Theme.swift in Sources */,
+				0D7BFDD029E9E46100BCD9F6 /* QuranMetadata.swift in Sources */,
 				0D92064929DE3C24002C3863 /* SearchView.swift in Sources */,
 				0D38114F29DE0AA400CA58D6 /* TranslationSettingsPopover.swift in Sources */,
 				0D38114D29DE0AA400CA58D6 /* FontSettingsPopover.swift in Sources */,
@@ -772,10 +846,11 @@
 				CODE_SIGN_ENTITLEMENTS = TheHolyQuran/TheHolyQuran.entitlements;
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 2;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "The-Holy-Quran-Info.plist";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.education";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
@@ -791,7 +866,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 13.0;
-				MARKETING_VERSION = 0.2.0;
+				MARKETING_VERSION = 0.3.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.MacAppDevelop.TheHolyQuran;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
@@ -810,10 +885,11 @@
 				CODE_SIGN_ENTITLEMENTS = TheHolyQuran/TheHolyQuran.entitlements;
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 2;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "The-Holy-Quran-Info.plist";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.education";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
@@ -829,7 +905,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 13.0;
-				MARKETING_VERSION = 0.2.0;
+				MARKETING_VERSION = 0.3.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.MacAppDevelop.TheHolyQuran;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;

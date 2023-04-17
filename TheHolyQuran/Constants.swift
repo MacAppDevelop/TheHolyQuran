@@ -45,7 +45,7 @@ struct K {
         IncludedTranslation(lang: "Persian", langLocal: "فارسی", name: "الهی قمشه‌ای", translator: "Mahdi Elahi Ghomshei", sql: "fa_ghomshei", locId: "fa", dir: .rightToLeft),
         IncludedTranslation(lang: "Persian", langLocal: "فارسی", name: "خرمشاهی", translator: "Baha'oddin Khorramshahi", sql: "fa_khorramshahi", locId: "fa", dir: .rightToLeft),
         IncludedTranslation(lang: "Persian", langLocal: "فارسی", name: "مجتبوی", translator: "Sayyed Jalaloddin Mojtabavi", sql: "fa_mojtabavi", locId: "fa", dir: .rightToLeft),
-        IncludedTranslation(lang: "French", langLocal: "Français", name: "Hamidullah", translator: "Muhammad Hamidullah", sql: "fr.hamidullah", locId: "fr"),
+        IncludedTranslation(lang: "French", langLocal: "Français", name: "Hamidullah", translator: "Muhammad Hamidullah", sql: "fr_hamidullah", locId: "fr"),
         IncludedTranslation(lang: "Hausa", langLocal: "Hausa", name: "Gumi", translator: "Abubakar Mahmoud Gumi", sql: "ha_gumi", locId: "ha"),
         IncludedTranslation(lang: "Hindi", langLocal: "हिन्दी", name: "फ़ारूक़ ख़ान & अहमद", translator: "Muhammad Farooq Khan and Muhammad Ahmed", sql: "hi_farooq", locId: "hi"),
         IncludedTranslation(lang: "Hindi", langLocal: "हिन्दी", name: "फ़ारूक़ ख़ान & नदवी", translator: "Suhel Farooq Khan and Saifur Rahman Nadwi", sql: "hi_hindi", locId: "hi"),
@@ -98,8 +98,8 @@ struct K {
     
     static let minimumMainSearchCharacters = 3
     
-    static let surahNameFontFamily: ArabicFonts = .firstAvailable(from: [.AlBayan, .Baghdad, .AlNile], fallback: .SFPro)
-    static let surahNameFontSize: CGFloat = 43
+    static let surahNameFontFamily: ArabicFonts = .firstAvailable(from: [.SFArabic, .SFArabicRounded, .GeezaPro], fallback: .SFPro)
+    static let surahNameFontSize: CGFloat = 35
     static let surahSpacing: CGFloat = 30
     static let verseNumberSize: CGFloat = 38
     
@@ -111,6 +111,8 @@ struct K {
     static let translationLineSpacing: CGFloat = 5
     
     struct StorageKeys {
+        static let quranTextTypeSelection = "quranTextTypeSelection"
+        
         static let appearance = "appearance"
         
         static let arabicFontFamily = "arabicFontFamily"

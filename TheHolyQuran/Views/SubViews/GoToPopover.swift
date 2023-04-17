@@ -22,7 +22,7 @@ struct GoToPopover: View {
             showPopover.toggle()
             
             if showPopover, let surah = surahVM.surah {
-                surahNumber = surah.surah_id
+                surahNumber = surah.surah_number
             }
         } label: {
             Image(systemName: "arrow.uturn.down")

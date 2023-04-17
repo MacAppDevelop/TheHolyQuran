@@ -3,6 +3,7 @@
 Quran applications for macOS (source is ready to work on iPadOS and iOS as well).
 
 - Includes 70+ translation for several languages.
+- Various text types for The Holy Quran (including Uthmani and Simple Scripts)
 - Search in Ayats and Translations
 - Search in list of Surahs with Arabic/English name or Surah Number
 - "Go To" functionality to quickly go to a specific Surah and Aya
@@ -18,11 +19,13 @@ Quran applications for macOS (source is ready to work on iPadOS and iOS as well)
 
 # License
 
-The code and application itself are licensed under Apache License 2.0, **excluding all .sqlite files in the repository**.
+The code and application itself are licensed under Apache License 2.0, **excluding all .sqlite and .ttf/.otf font files in the repository**.
 
 The reason for excluding .sqlite files is because all translation files are from [Tanzil website](https://tanzil.net/trans/).
 
-**Terms of Use from Tanzil website:**
+Also the file named TheHolyQuran.sqlite contains The Holy Quran's Text and Metadata from [Tanzil](https://tanzil.net/download) and [Islam-db](https://quran.islam-db.com/) data.
+
+**Terms of Use for Translation Files from Tanzil website:**
 
 The translations provided are for non-commercial purposes only. If used otherwise, you need to obtain necessary permission from the translator or the publisher.
 
@@ -40,3 +43,6 @@ No translation of Quran can be a hundred percent accurate, nor it can be used as
 <img width="493" alt="screen2" src="https://user-images.githubusercontent.com/130184918/230766385-a6fb544c-c14a-4340-8670-d382ff38196c.png">
 <img width="495" alt="screen3" src="https://user-images.githubusercontent.com/130184918/230766390-eb0da9b9-72ae-4145-b932-cb5bf2e9ac51.png">
 
+# Final Note:
+
+I have done my best to ensure there are no bugs or issues, but please report if you find any mistakes or issues.

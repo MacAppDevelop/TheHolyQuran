@@ -17,13 +17,13 @@ struct AyaInfo: View {
         }
         .popover(isPresented: $showPopover) {
             VStack(alignment: .leading) {
-                Text("Surah Number: \(aya.surah_id)")
-                Text("Aya Number: \(aya.aya_id)")
+                Text("Surah Number: \(aya.surah_number)")
+                Text("Aya Number: \(aya.aya_number)")
                 Text("Page: \(aya.page)")
                 Text("Quarter: \(aya.quarter)")
                 Text("Hizb (Group): \(aya.hizb)")
                 Text("Juz (Part): \(aya.juz)")
-                Text("Sajda (Islamic Prostration): \(aya.sajda ? "Yes" : "No")")
+                Text("Sajda (Islamic Prostration): \(aya.sajda ? "Yes\(aya.sajdaObligatory ? " (Obligatory)" : "" )" : "No")")
             }
             .padding()
             .font(.footnote)

@@ -10,6 +10,8 @@ import SwiftUI
 struct FontSettingsPopover: View {
     @State private var showPopover = false
     
+    @AppStorage(K.StorageKeys.quranTextTypeSelection) private var quranTextTypeSelection: QuranTextType = .tanzilSimple
+    
     @AppStorage(K.StorageKeys.selectedTranslationSQLiteFileName) private var selectedTranslationSQLiteFileName: String = K.defaultTranslationSQLiteFileName
     
     @AppStorage(K.StorageKeys.arabicFontFamily) private var arabicFontFamily: ArabicFonts = .defaultFontFamily
@@ -26,12 +28,23 @@ struct FontSettingsPopover: View {
         }
         .popover(isPresented: $showPopover, arrowEdge: .bottom) {
             VStack {
+                Picker("Quran Text Type", selection: $quranTextTypeSelection) {
+                    ForEach(QuranTextType.allCases) { textType in
+                        Text("\(textType.rawValue)").tag(textType)
+                    }
+                }
+                .padding(.top)
+                Text("Source: \(quranTextTypeSelection.source)").font(.footnote)
+                
                 Picker("Arabic Font", selection: $arabicFontFamily) {
                     ForEach(ArabicFonts.available) { font in
                         Text(font.rawValue).tag(font)
                     }
                 }
                 .padding(.top)
+                if let source = arabicFontFamily.source {
+                    Text("Source: \(source)").font(.footnote)
+                }
                 
                 Slider(value: $arabicFontSize, in: K.ayaFontMinSize...K.ayaFontMaxSize) {
                     Text("Arabic Font Size")
